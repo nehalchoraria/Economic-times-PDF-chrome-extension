@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Economic Times Pdf Generator",
+    "description": "Downloads e-paper for Economic Times. Visit website and click the icon.",
+    "version": "1.0",
+    "permissions": ["storage", "declarativeContent", "activeTab", "scripting"],
+    "background": {"service_worker": "scripts/background.js"},
+    "host_permissions": [
+        "https://bcclepaper.indiatimes.com/print/the-economic-times/delhi/*"
+    ],
+    "action": {
+    }
+  }
