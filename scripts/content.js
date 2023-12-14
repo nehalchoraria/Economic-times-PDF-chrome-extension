@@ -48,7 +48,9 @@ createPdf = async (imgArr) => {
                     // This puts the URL of the active element at the top of the document
                     newPDF.addImage(img64, 'JPEG', 0, 0, width, height);
                 })
-                newPDF.save('demo.pdf');
+
+                var date = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+                newPDF.save('economic_times_' + date + '.pdf');
                 console.log('Document served!');
             }
         });
