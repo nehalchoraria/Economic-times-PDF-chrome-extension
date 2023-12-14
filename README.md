@@ -8,3 +8,5 @@ Steps to download PDF -
 4. Pin the extention if needed.
 5. **Visit website** - https://bcclepaper.indiatimes.com/print/the-economic-times/delhi
 6. Click the extention and PDF will start downloading.
+
+**Note - Watch reference video for any clarifications**
