@@ -1,5 +1,5 @@
 # economic-times-daily-pdf
-Downloads e-paper and prints to pdf
+Downloads Econmic times e-paper and prints to pdf 
 
 Steps to download PDF - 
 1. **Clone respoitory**
