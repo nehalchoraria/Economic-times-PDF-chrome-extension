@@ -57,19 +57,20 @@ createPdf = async (imgArr) => {
 
 // Open modal
 gridViewBtn = document.getElementById('grid-view')
-gridViewBtn.click()
+if(gridViewBtn) {
+    gridViewBtn.click()
+    setTimeout(function() {
+        // Get all the pages URLs
+        pages = document.getElementsByClassName('pages-card-img')
+        links = []
+        for (let index = 0; index < pages.length; index++) {
+            links.push(pages[index].src);
+        }
+        
+        // Start building pdf
+        createPdf(links)
 
-setTimeout(function() {
-    // Get all the pages URLs
-    pages = document.getElementsByClassName('pages-card-img')
-    links = []
-    for (let index = 0; index < pages.length; index++) {
-        links.push(pages[index].src);
-    }
-    
-    // Start building pdf
-    createPdf(links)
-
-}, 1000);
+    }, 1000);
+}
 
 
